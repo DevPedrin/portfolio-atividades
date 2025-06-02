@@ -45,13 +45,11 @@ main {
 footer {
     background-color: #2C2C2C;
     padding: 20px;
-    position: fixed;
     display: flex;
     flex-direction: row;
     gap: 50px;
     align-items: center;
-    bottom: 0;
-    width: 100%;
+    margin-top: 5px;
 }
 .info-api, .info-me {
     display: flex;
