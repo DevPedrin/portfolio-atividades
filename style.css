@@ -1,8 +1,13 @@
+@font-face {
+    font-family: Righteous;
+    src: url(./fonts/Righteous-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     color: #E0E0E0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Righteous;
 }
 
 body {
@@ -49,7 +54,7 @@ footer {
     flex-direction: row;
     gap: 50px;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .info-api, .info-me {
     display: flex;
@@ -71,11 +76,11 @@ footer {
 }
 
 a {
-    color: #64B5F6;
+    color: #bb2a58;
     text-decoration: none;
 }
 a:hover {
-    color: #90CAF9;
+    color: #e63f74;
 }
 
 
