@@ -22,6 +22,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .info-header {
     background-color: #2C2C2C;
@@ -55,6 +57,10 @@ footer {
     gap: 50px;
     align-items: center;
     margin-top: 20px;
+    border-top: 1px solid #bb2a5857;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .info-api, .info-me {
     display: flex;
@@ -88,8 +94,9 @@ a:hover {
 
 
 table {
-    width: 800px;
-    border-collapse: collapse; /* Remove espaçamentos entre as células */
+    min-width: 600px;
+    max-width: 650px;
+    border-collapse: collapse;
     font-family: Arial, sans-serif;
     margin-top: 20px;
   }
@@ -98,6 +105,14 @@ table {
     border: 1px solid #ccc;
     padding: 12px 15px;
     text-align: left;
+  }
+
+
+  td {
+    white-space: nowrap;       /* Tudo em uma linha só */
+    overflow: hidden;          /* Esconde o que passar do limite */
+    text-overflow: ellipsis;   /* Adiciona os "..." no final */
+    max-width: 200px;          /* Define uma largura máxima */
   }
   
   thead {
